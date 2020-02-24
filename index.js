@@ -1,5 +1,5 @@
 const uniqid = require("uniqid");
-const webSocketsServerPort = 4000;
+const webSocketsServerPort = process.env.PORT || 3000;
 const webSocketServer = require("websocket").server;
 const http = require("https");
 // Spinning the http server and the websocket server.
